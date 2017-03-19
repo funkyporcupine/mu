@@ -315,3 +315,15 @@
 
 
 }());
+
+$(document).ready(function() {
+  // Header Scroll
+  $(window).on('scroll', function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 50) {
+      $('#truc').addClass('fixed');
+    } else {
+      $('#truc').removeClass('fixed');
+    }
+  });
+  });
